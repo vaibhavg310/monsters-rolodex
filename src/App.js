@@ -1,7 +1,7 @@
 import {Component} from 'react';
 //import logo from './logo.svg';
 import CardList from './components/card-list/card-list.component';
-import SearchBox from './components/card-list/search-box/search-box.component'
+import SearchBox from './components/search-box/search-box.component'
 import './App.css';
 
  
@@ -57,7 +57,7 @@ class App extends Component {
     
     return (
       <div className="App">
-        
+        <h1 className="app-title">Monsters Rolodex</h1>
 
         {/* {filteredMonsters.map((monster) => {
           return( 
@@ -68,7 +68,7 @@ class App extends Component {
         })} */}  
 
         <SearchBox 
-        classname = 'search-box'
+        classname = 'monster-search-box'
         onChangeHandler = {onSearchChange}
         placeholder = 'search monsters'
         />
